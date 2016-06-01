@@ -13,11 +13,22 @@ May 6, 2016
 
 Support for all 7 I2C devices supported by WeatherPiArduino
 
+
+Support for all 7 I2C devices supported by WeatherPiArduino
+
+June 1, 2016:  Fixed directories and filenames
+
 Files include:
-	Arduino-WeatherPiArduino.ino - main file 
-	
+        SDL_Arduino_WeatherPiArduinoV2.ino - main file
+
 
 other support files and libraries
+
+To Install:
+
+MOVE all of the directories in the libraries folder into your Arduino libraries folder and then restart the Arduino IDE.
+
+
 
 To Install:
 
