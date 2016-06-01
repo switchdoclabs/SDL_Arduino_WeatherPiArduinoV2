@@ -1,5 +1,5 @@
 // Filename Arduino-WeatherPiArduino.ino
-// Version 2.0 May 6, 2016
+// Version 2.1 June 1, 2016
 // SwitchDoc Labs, LLC
 //
 // Version 1.6 - Added support for ADS1015 and for MOD-1016 Lightning Detector
@@ -25,8 +25,6 @@
 
 
 
-#include "Config.h"
-
 
 #include <Time.h>
 #include <Wire.h>
@@ -34,10 +32,6 @@
 
 
 long messageCount;
-
-static uint8_t mac[] = LOCALMAC;
-static uint8_t ip[] = LOCALIP;
-
 
 
 float windSpeedMin;
@@ -254,14 +248,6 @@ void p(char *fmt, ... ) {
 }
 
 
-// no-cost stream operator as described at
-// http://sundial.org/arduino/?page_id=119
-template<class T>
-inline Print &operator <<(Print &obj, T arg)
-{
-  obj.print(arg);
-  return obj;
-}
 
 
 
